@@ -3,7 +3,9 @@ A guide to enable MULTISITE in wordpress
 
 1. go to the hosting - open wp_config.php - add following line and save.
 //mulsite
+
 define( 'WP_ALLOW_MULTISITE', true );
+
 2. Goto the wp-admin- tools- network setup-
 
   Two types
@@ -18,9 +20,11 @@ define( 'WP_ALLOW_MULTISITE', true );
     //for existing setup you will get subdomain by default
 
  enable any one of it.
+ 
 3. Copy the generated code in respective wp-config.php and .htaccess file
   //sample attached
 4. Now you will see the network admin on top bar - goto network admin- enable plugins as required for sites
+
 5. Also you can create any number of sites now on.
 
 Q & A
