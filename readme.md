@@ -14,15 +14,16 @@ define( 'WP_ALLOW_MULTISITE', true );
     2.Subdirectories — a path-based network in which on-demand sites use paths
       e.g based on directories inside the main setup
 
-    choose any one of it.
+choose any one of it.
 
-    // note you will see this option for new setup
-    //for existing setup you will get subdomain by default
+// note you will see this option for new setup
+//for existing setup you will get subdomain by default
 
  enable any one of it.
  
 3. Copy the generated code in respective wp-config.php and .htaccess file
-  //sample attached
+//sample attached
+
 4. Now you will see the network admin on top bar - goto network admin- enable plugins as required for sites
 
 5. Also you can create any number of sites now on.
@@ -39,13 +40,16 @@ Q & A
 
 4. how to access db tables of one subsite from another?
   you have make switch to subsite using site id
+  
   switch_to_blog( $id );
 
  //do your compution and restore
+  
   restore_current_blog();
 
 5. how to convert from Subdirectories to subdomain in wordpress?
 change this in wp-cofig and update htaccess accordingly
+
 define('SUBDOMAIN_INSTALL', true);
 
 //warning backup before doing this
